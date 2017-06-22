@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  showPopUp = false;
+  constructor( ) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  clicked() {
+    this.showPopUp = !this.showPopUp;
   }
-
+  ngOnInit() {
+  
+  }
 }
+
+ 

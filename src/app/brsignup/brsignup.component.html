@@ -1,0 +1,54 @@
+<div class="signup-container">
+<div class="container">
+  <div class="row">
+<div class="modal" id="exampleModalLong" [ngClass]="{'open':'showForm'}">
+        <div class="col-md-6 col-sm-6 col-sm-offset-3">
+            <div class="card card-signup">
+                <form class="form" method="action" [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+                    <div class="header header-primary text-center">
+                        <h4 class="card-title">SIGN UP</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                           </button>
+                    </div>
+                        <div class="card-content">
+                <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">email</i>
+									</span>
+									<div class="form-group is-empty">
+                    <input type="text" class="form-control" placeholder="Email..." formControlName="email"><span class="material-input"></span></div>
+								</div>
+                <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">smartphone</i>
+									</span>
+									<div class="form-group is-empty">
+                    <input type="text" class="form-control" placeholder="Phone..." formControlName="phone"><span class="material-input"></span></div>
+								</div>
+                <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">lock_outline</i>
+									</span>
+									<div class="form-group is-empty">
+                    <input type="password" placeholder="Password..." class="form-control" formControlName="password"><span class="material-input"></span></div>
+								</div>
+                <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">lock_outline</i>
+									</span>
+									<div class="form-group is-empty">
+                    <input type="password" placeholder="Confirm Password..." class="form-control" formControlName="cnfpassword"><span class="material-input"></span></div>
+								</div>
+                </div>
+                <div class="footer text-center">
+                    <button class="btn btn-primary" data-dismiss="modal"(click)="cancelClicked()">CANCEL</button>
+                    <button class="btn btn-primary">SUBMIT</button>
+                </div>   
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,30 +1,26 @@
 <div class="container-fluid header-sub">
-<nav class="navbar navbar-toggleable-xl navbar-light bg-faded">
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<!-- Links -->
-<div class="collapse navbar-collapse justify-content-end" id="nav-content">   
-<ul class="navbar-nav">
-<li class="nav-item">
-<a class="nav-link" href="#">Buyer Protection</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Customer Service</a>
-</li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-Language
-</a>
-<div class="dropdown-menu" aria-labelledby="Preview">
-<a class="dropdown-item" href="#">Telugu</a>
-<a class="dropdown-item" href="#">Hindi</a>
-<a class="dropdown-item" href="#">English</a>
-</div>
-</li>
+<div>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Sell On BR</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Track order</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Help</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Language</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">English</a>
+      <a class="dropdown-item" href="#">Tamil</a>
+      <a class="dropdown-item" href="#">Telugu</a>
+    </div>
+  </li>
 </ul>
 </div>
-</nav>
+  <div class="menu-main">
 <div class="row">
 <div class="col-md-3 col-sm-5 logo-height">
   <img src="assets/images/Logobr.min.png">
@@ -49,9 +45,14 @@ Language
 <div class="cart-height">
         <button class="btn btn-outline-success" type="submit"><i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>CART<span class="cart-count">0</span></button>
 </div>
+<div class="cart-wish">
+        <span><a href="" class="active">Wish List</a></span>
+</div>
 <div class="cart-height">
-        <span><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i><a href="" class="active">Wish List</a></span>
+        <button class="btn btn-outline-success"><i class="fa fa-user-o fa-1x" aria-hidden="true"></i><a (click)="clicked()" class="" data-toggle="modal" data-target="#exampleModalLong">SignUp/SignIn</a></button>
 </div>
   </div>
+  </div>
 </div>
+<app-brlogin *ngIf="showPopUp"></app-brlogin>
 

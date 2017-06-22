@@ -1,0 +1,67 @@
+<div class="header-container" [hidden]="hideLogIn">
+<div class="container">
+  <div class="row">
+<div class="modal" id="exampleModalLong">
+        <div class="col-md-6 col-sm-6 col-sm-offset-3">
+            <div class="card card-signup">
+                <form
+                    class="form"
+                    method="action">
+                    <div class="header header-primary text-center">
+                        <h4 class="card-title">LOG IN</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                           </button>
+                            <div class="social-line">
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-just-icon btn-simple"
+                                >
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-just-icon btn-simple"
+                                >
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-just-icon btn-simple" (click)="loginWithGoogle()"
+                                >
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div>
+                    </div>
+                    <p class="description text-center">Wanna be classical!!</p>        
+                        <div class="card-content">
+                <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">email</i>
+									</span>
+									<div class="form-group is-empty">
+                    <input type="text" class="form-control" placeholder="Please enter Email/Phone number"><span class="material-input"></span></div>
+								</div>
+                <div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">lock_outline</i>
+									</span>
+									<div class="form-group is-empty">
+                    <input type="password" placeholder="Password..." class="form-control"><span class="material-input"></span></div>
+								</div>
+                </div>
+                <div class="footer text-center">
+                    <button class="btn btn-primary" data-dismiss="modal" (click)="cancelClicked()">CANCEL</button>
+                    <button class="btn btn-primary" (click)="submitClicked()">SUBMIT</button>
+                </div>
+                <div class="footer text-center">
+								<span>New to A2ZBuyRental?<a href="#" (click)="registerClicked()">SignUp</a></span>
+							</div>        
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<app-brsignup *ngIf="showRegisterForm"></app-brsignup>

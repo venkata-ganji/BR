@@ -1,0 +1,115 @@
+.header-container {
+    .btn-primary {
+    width: 20%;
+    height: 50px;
+    background-color: #9c27b0;
+    border-color :#9c27b0;
+    }
+.card {
+    display: inline-block;
+    width: 100%;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    position: relative;
+    border-radius: 6px;
+    margin-left: 50%;
+    margin-top: 25%;
+    height: 432px;
+}
+.card-signup .header {
+    box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -40px;
+    padding: 20px 0;
+}
+.card-title {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.description {
+        color: #999;
+        text-align: center;
+        margin: 0 0 10px;
+}
+.card-signup .card-content {
+    padding: 0 30px 0 10px;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.card .footer {
+    margin-top: 15px;
+    text-align:center;
+}
+.card .header-primary {
+    background: linear-gradient(60deg,#ab47bc,#7b1fa2);
+}
+.form-group {
+    padding-bottom: 7px;
+    margin: 27px 0 0;
+    position: relative;
+}
+.form-group .is-focused .form-control {
+    outline: 0;
+    background-image: linear-gradient(#9c27b0,#9c27b0),linear-gradient(#D2D2D2,#D2D2D2);
+    background-size: 100% 2px 100% 1px;
+    box-shadow: none;
+    -moz-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.form-control, .form-group .form-control {
+    border: 0;
+    background-image: linear-gradient(#9c27b0,#9c27b0),linear-gradient(#D2D2D2,#D2D2D2);
+    background-size: 0 2px,100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom,center calc(100% - 1px);
+    background-color: transparent;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 400;
+}
+.form-control {
+        height: 36px;
+    padding: 7px 0;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+        display: table-cell;
+}
+.input-group .form-control {
+    width:100%;
+}
+.social-line {
+        margin-top: 15px;
+    text-align: center;
+    padding: 0;
+}
+.card-signup .social-line .btn {
+    color: #FFF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn.btn-just-icon {
+font-size: 20px;
+    padding: 12px;
+    line-height: 1em;
+}
+.btn.btn-simple {
+    background-color: transparent;
+    box-shadow: none;
+}
+.btn.btn-just-icon i {
+        width: 20px;
+}
+.input-group .input-group-addon {
+    border: 0;
+    background: 0 0;
+    padding: 27px 0px 0;
+}
+}
